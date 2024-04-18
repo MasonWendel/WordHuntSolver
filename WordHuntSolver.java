@@ -66,7 +66,13 @@ public class WordHuntSolver {
                 solvePuzzle(validWords, visitedBoard, board, r, c, "");
             }
         }
-        for(String word: validWords){
+
+        ArrayList<String> list = new ArrayList<String>();  // Adding all valid words into an array for sorting
+        list.addAll(validWords); 
+        list.sort(Comparator.comparing(String::length)); 
+
+
+        for(String word: list){
             System.out.println(word);
         }
 
