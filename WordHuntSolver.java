@@ -1,3 +1,8 @@
+// Mason Wendel
+
+
+
+
 import java.util.*;
 
 public class WordHuntSolver {
@@ -75,6 +80,8 @@ public class WordHuntSolver {
         for(String word: list){
             System.out.println(word);
         }
+
+        // works 
 
 
         
